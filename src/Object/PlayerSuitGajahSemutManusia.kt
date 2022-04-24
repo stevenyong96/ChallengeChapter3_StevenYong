@@ -2,7 +2,7 @@ package Object
 
 import Class.Player
 
-class PlayerSuit(name: String = "" , mood : String = "") : Player() {
+class PlayerSuitGajahSemutManusia(name: String = "" , mood : String = "") : Player(){
     override var name : String  = name
         get() = field
         set(value) {
@@ -15,6 +15,7 @@ class PlayerSuit(name: String = "" , mood : String = "") : Player() {
         return super.callMyName()
     }
 
-
-
+    fun mood(){
+        println("Senang")
+    }
 }
